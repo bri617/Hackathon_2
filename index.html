@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; /* Change to column for header and container */
+            align-items: center;
+            height: 100vh;
+            background-color: #F9F2E0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center; /* Center icon and title vertically */
+            background-color: #317912; /* Header background color */
+            color: #faf6ea; /* Text color */
+            padding: 20px; /* Padding around the header */
+            width: 100%; /* Full width */
+            justify-content: left; /* Align the header content to the left */
+        }
+
+        .header img {
+            color: white;
+            width: 60px; /* Icon width */
+            height: 60px; /* Icon height */
+            margin-right: 8px; /* Space between icon and title */
+        }
+
+        h1 {
+            font-size: 45px; /* Title font size */
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            align-items: center; /* Center-align items vertically */
+            margin-top: 20px; /* Space between header and container */
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .small-box {
+            width: 337.5px;
+            height: 290px;
+            background-color: #fffbea;
+            border: 2px solid #a9cb3f;
+            align-self: flex-start; /* Aligns small boxes to the start of the left column */
+            padding: 20px;
+        }
+
+        .right-column {
+            display: flex;
+            align-items: center;
+        }
+
+        .large-box {
+            width: 800px;
+            height: 600px;
+            background-color: #fffbea;
+            border: 2px solid #a9cb3f;
+            padding: 20px;
+        }
+        .large-box h1{
+            color: #317912;
+        }
+        .large-box img{
+            width: 200;
+            border-radius: 100px;
+            float: right;
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://cdn-icons-png.flaticon.com/512/2362/2362658.png" alt="Icon"> <!-- Replace this URL with your image URL -->
+        <h1>think small</h1>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="small-box">
+                <p>Why shop local?</p>
+                <p> ☆ Featured business ☆</p>
+            </div>
+            <div class="small-box">
+                <h1>Tags</h1>
+                <p>Type of business</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="large-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtttfTtkqFgSaizbNi8wda3gF9vkyEQvF3ZA&s" alt="Kiri Kiri logo">
+                <h1>Business Name</h1>
+                <p>Location</p>
+                <br>
+                <h2>About Section</h2>
+                <p>Reviews</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
