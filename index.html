@@ -20,6 +20,7 @@
         }
 
         .header {
+        
             display: flex;
             align-items: center; /* Center icon and title vertically */
             background-color: #317912; /* Header background color */
@@ -59,7 +60,8 @@
             background-color: #fffbea;
             border: 2px solid #a9cb3f;
             align-self: flex-start; /* Aligns small boxes to the start of the left column */
-            padding: 20px;
+            padding: 30px;
+            text-align: right;
         }
 
         .right-column {
@@ -73,17 +75,84 @@
             background-color: #fffbea;
             border: 2px solid #a9cb3f;
             padding: 20px;
+            font-size: 20px;
         }
+        
         .large-box h1{
             color: #317912;
         }
         .large-box img{
-            width: 200;
+            width: 200px;
             border-radius: 100px;
             float: right;
-            
-            
         }
+        .right-button{
+            background-color: #F9F2E0;
+            border: none;
+            padding: 15px 32px;
+            float: right;
+            text-align: center;
+            font-size: 16px;
+            display: flex;
+            justify-self: flex-end;
+            margin-left: auto;
+            border-radius: 12px;
+            font-weight: bold;
+            color: #317912;
+        }
+
+        .top-button{
+            background-color: #F9F2E0;
+            border: none;
+            padding: 15px 32px;
+            float: center;
+            text-align: center;
+            font-size: 16px;
+            display: flex;
+            justify-self: flex-end; 
+            margin-left: auto; 
+            border-radius: 8px;
+            border: 2px solid #a9cb3f;
+        }
+
+        .mid-button{
+            background-color: #F9F2E0;
+            border: none;
+            padding: 15px 32px;
+            float: center;
+            text-align: center;
+            font-size: 16px;
+            display: flex;
+            justify-self: flex-end; 
+            margin-left: auto; 
+            border-radius: 8px;
+            border: 2px solid #a9cb3f;
+        }
+
+        .bottom-button{
+            background-color: #F9F2E0;
+            border: none;
+            padding: 15px 32px;
+            float: center;
+            text-align: center;
+            font-size: 16px;
+            display: flex;
+            justify-self: flex-end; 
+            margin-left: auto; 
+            border-radius: 8px;
+            border: 2px solid #a9cb3f;
+        }
+    .small-box a{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+     }
+     .large-box a{
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+     }
+
         
     </style>
 </head>
@@ -91,28 +160,46 @@
     <div class="header">
         <img src="https://cdn-icons-png.flaticon.com/512/2362/2362658.png" alt="Icon"> <!-- Replace this URL with your image URL -->
         <h1>think small</h1>
+        <button class="right-button" >Need to Add a Business?</button>
+        
     </div>
     <div class="container">
         <div class="left-column">
             <div class="small-box">
-                <p>Why shop local?</p>
-                <p> ☆ Featured business ☆</p>
+                <h2>Why shop local?</h2>
+                <p>Supporting local businesses helps the local economy, creates jobs, and builds community.</p>
+                <br>
+                <h2> ☆ Featured business ☆</h2>
+                <a href="https://www.facebook.com/lephohouse/">Lê Phở House</a>
             </div>
             <div class="small-box">
-                <h1>Tags</h1>
-                <p>Type of business</p>
+                <h2>Tags</h2>
+                <button class="top-button">Type of Businesses</button>
+                <br>
+                <button class="mid-button">Women Owned</button>
+                <br>
+                <button class="bottom-button">Around The World</button>
+                <br>
             </div>
         </div>
         <div class="right-column">
             <div class="large-box">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtttfTtkqFgSaizbNi8wda3gF9vkyEQvF3ZA&s" alt="Kiri Kiri logo">
-                <h1>Business Name</h1>
-                <p>Location</p>
+                <h1>Kiri Kiri</h1>
+                <p>5401 N 10th St Suite 129, McAllen, TX 78504</p>
                 <br>
-                <h2>About Section</h2>
-                <p>Reviews</p>
+                <h2>About</h2>
+                <p>Lee came to the United States in 2017 from outside of Seoul in South Korea. She had a dream to sell her Korean fried chicken and introduce our community to hers.“Sure, I really wanted 
+                    to spread Korean culture in the Valley. I am so proud of myself and my team, even the Valley that everyone enjoys our food,” Lee told us.                      
+                    She adds her restaurant also showcases other sides of Korean culture. “I enjoy the K-pop music,” Lee said. “Ever since I was born in 1990, I was a big fan of K-pop. I love Korean movies!”
+                </p>
+                <br>
+                <img  src="images/imagekiri.png">
+                <a href="https://www.yelp.com/biz/kiri-kiri-korean-fried-chicken-mcallen-2">Reviews</a>
+               
             </div>
         </div>
     </div>
 </body>
 </html>
+
